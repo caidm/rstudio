@@ -409,6 +409,8 @@ public class PaneManager
             return;
          }
 
+         if (window.getActiveWidget() == null)
+            return;
          Double width = Double.valueOf(window.getActiveWidget().getOffsetWidth());
 
          // If the widget is already visible horizontally, then bail
